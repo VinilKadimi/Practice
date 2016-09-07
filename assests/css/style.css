@@ -18,6 +18,12 @@ ul
 h1{
   font-family: 'Josefin Slab', serif;
 }
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid #eee !important;
+}
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -46,6 +52,12 @@ input:focus::-webkit-input-placeholder {
 /*General Usage*/
 .m-b-0{
   margin-bottom: 0!important;
+}
+.m-b-20{
+  margin-bottom: 20px !important;
+}
+.m-t-25{
+  margin-top: 25px;
 }
 .padding-35{
   padding: 35px !important;
@@ -101,4 +113,23 @@ input:focus::-webkit-input-placeholder {
   width: 100%;
   border-radius: 4px;
   border: 1px #ccc;
+}
+.textarea-class{
+  width: 100%;
+  height: 150px;
+}
+.prdCnt,.prdQnty{
+  width: 40px;
+  border: 0;
+}
+.brndNm,.prdNm,.prdTyp,.prdPrc{
+  width: 120px;
+  border:0;
+}
+.prdDesc{
+  width: 200px;
+  border: 0;
+}
+.prdMdlWdth{
+  width: 110%;
 }
