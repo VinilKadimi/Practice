@@ -236,8 +236,9 @@
   var uIDArray = [];
   $(document).ready(function () {
     $('#uidErrMsg').hide();
-    var heightOfDom = $(window).height();
+    var heightOfDom = $(document).innerHeight();
      $('#section1,#section2,#section3,#section4,#section4').css('height', heightOfDom);
+    $("nav").focus();
 
     //$('select#typeOfPrd').selectBoxIt();
     //AutoComplete
