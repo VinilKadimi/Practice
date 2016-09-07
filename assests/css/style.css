@@ -15,8 +15,8 @@ ul
   list-style-type: none;
 }
 
-h1{
-  font-family: 'Josefin Slab', serif;
+body{
+  font-family: 'Play','Josefin Slab', sans-serif, serif !important;
 }
 hr {
   margin-top: 20px;
@@ -39,7 +39,10 @@ input:focus::-webkit-input-placeholder {
 .wrapper input[type="text"] {
   position: relative;
 }
-
+.navbar {
+  border: 0!important;
+  border-radius: 0!important;
+}
 /*ID's & Classes*/
 #section1,#section2,#section4,#section4{
   min-height:768px;
@@ -141,7 +144,7 @@ input:focus::-webkit-input-placeholder {
   font-size: 12px;
 }
 .border-rcc{
-  border: 1px solid #bb1521;
+  border: 1px solid #bb1521 !important;
 }
 .tabEle{
   width: 90%;
@@ -152,84 +155,4 @@ input:focus::-webkit-input-placeholder {
   text-align: center;
   padding-top: 15px;
   cursor: pointer;
-}
- /*tagSort Items*/
-body {
-  background-color: #FFF;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
-  "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-h1 > small a {
-  color: #AAA;
-  text-decoration: none;
-  font-size: 70%;
-  margin-left: 10px;
-}
-
-h1 > small a:hover {
-  color: #000;
-}
-.item {
-  box-sizing: border-box;
-  float: left;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 20%;
-  margin-bottom: 40px;
-  height: 360px;
-  max-height: 360px;
-  overflow: hidden;
-
-}
-
-.item .wrapper {
-  background-color: #f4f4f4;
-  padding: 8px;
-  height: 50%;
-}
-
-.item .wrapper img {
-  width: 50%;
-}
-
-.item .wrapper .item-tags {
-  color: #AAA;
-  font-size: 12px;
-  line-height: 1.8;
-}
-
-.tagsort-tags-container {
-  margin: 40px 0;
-}
-.tagsort-tags-container span {
-  display: inline-block;
-  /*background-color: #fff !important;*/
-  border: 2px solid #CCC;
-  color: #AAA;
-  font-size: 12px;
-  line-height: 10px;
-  padding: 5px 9px;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 12px;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-.tagsort-tags-container span:hover {
-  border: 2px solid #000;
-  color: #FFF;
-  background-color: #000;
 }
