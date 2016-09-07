@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html+>
 <html>
 
 <head>
@@ -75,7 +75,20 @@
     the navigation bar while scrolling!</p>
 </div>
 <!--Fluid Container Section2-->
-<div id="section2" class="container padding-35">
+
+<div id="section2" class="container-fluid padding-35">
+  <div class="row">
+    <div class="col-md-2">
+      <ul>
+        <li>Task 1</li>
+        <li>Task 1</li>
+        <li>Task 1</li>
+        <li>Task 1</li>
+        <li>Task 1</li>
+      </ul>
+    </div>
+
+    <div class="col-md-8">
   <h1>Enter Data</h1>
 
   <div class="row">
@@ -120,7 +133,13 @@
     </div>
   </div>
   <div class="row m-t-25">
-    <div class="col-md-6 col-sm-6 "></div>
+    <div class="col-md-6 col-sm-6 ">
+      <ul class="p-l-0">
+        <li><label>UID</label></li>
+        <li><input type="number" id="uID" class="form-control" placeholder="Unique Id"></li>
+        <li><span class="error-msg" id="uidErrMsg">UID already Exit </span></li>
+      </ul>
+    </div>
     <div class="col-md-6 col-sm-6 pull-right ">
       <ul class="p-l-0">
         <li><label>Description</label></li>
@@ -134,14 +153,16 @@
   <div class="row m-t-25">
     <div class="col-md-4 col-sm-4"></div>
     <div class="col-md-4 col-sm-4">
-      <button class="btn btn-primary center-block" id="entrData" data-toggle="modal" data-target="#productsModal">Enter
+      <button class="btn btn-primary center-block" id="entrData">Enter
         Data
       </button>
     </div>
     <div class="col-md-4 col-sm-4"></div>
   </div>
-  <div class="row m-t-25">
 
+    </div>
+
+    <div class="col-md-2"></div>
   </div>
 
 </div>
@@ -189,6 +210,7 @@
                   <th>Type</th>
                   <th>Quantity</th>
                   <th>Price</th>
+                  <th>UID</th>
                   <th>Description</th>
                 </tr>
                 </thead>
@@ -216,9 +238,11 @@
 </body>
 
 <script>
+  var uIDArray = [];
   $(document).ready(function () {
+    $('#uidErrMsg').hide();
     /*var heightOfDom = $(window).height();
-    $('#section1,#section2,#section3,#section4,#section4').css('height', heightOfDom);*/
+     $('#section1,#section2,#section3,#section4,#section4').css('height', heightOfDom);*/
 
     //$('select#typeOfPrd').selectBoxIt();
     //AutoComplete
@@ -236,9 +260,17 @@
     });
 
   });
-  $(document).on('click', '#typeOfPrd', function () {
-    $("select#typeOfPrd").selectBoxIt();
-  });
+
+$(document).on('keyup', '#uID', function () {
+  var valOfUid = $('#uID').val();
+  if ($.inArray(valOfUid, uIDArray) > -1) {  }
+  else{
+    $('#brandName,#productName,#typeOfPrd,#quantity,#price,#uID,#description').removeClass('border-rcc');
+    $('#uidErrMsg').hide();
+
+  }
+
+});
 
   var productObj = {};
   $(document).on('click', "#entrData", function () {
@@ -247,27 +279,41 @@
     var ptype = $('#typeOfPrd').val();
     var pqnty = $('#quantity').val();
     var pprice = $('#price').val();
+    var uid = $('#uID').val();
     var pdesc = $('#description').val();
+    var len = $('#productsTbl tr').length;
     productObj.bName = bname;
     productObj.pName = pname;
     productObj.pType = ptype;
     productObj.pQnty = pqnty;
     productObj.pPrice = pprice;
     productObj.pDesc = pdesc;
+    console.log('uid:::', uid);
+    var prevUID = $("#productsTbl tr:last").find('.prdUid').val();
+    console.log('prevuid:::', prevUID);
+    console.log('uid array: ' + uIDArray);
+    if ($.inArray(uid, uIDArray) > -1) {
+      $('#brandName,#productName,#typeOfPrd,#quantity,#price,#uID,#description').addClass('border-rcc');
+      $('#uidErrMsg').show();
 
-    //
-    $('#productsTbl tbody').append(returnTrTemplate(bname, pname, ptype, pqnty, pprice, pdesc));
+    } else {
+      uIDArray.push(uid);
+      $('#productsTbl tbody').append(returnTrTemplate(len, bname, pname, ptype, pqnty, pprice, uid, pdesc));
+      $("#productsModal").modal()
+    }
     console.log(JSON.stringify(productObj));
+
   });
-  function returnTrTemplate(val1, val2, val3, val4, val5, val6) {
+  function returnTrTemplate(len, val1, val2, val3, val4,  val5,uid, val6) {
 
     var template = '<tr>' +
-        '            <td><input type="text" class="prdCnt pull-left" readonly></td>' +
+        '            <td><input type="text" class="prdCnt pull-left" readonly value= "' + len + ' " ></td>' +
         '            <td><input type="text" class="brndNm pull-left" readonly value= "' + val1 + ' " ></td>' +
         '            <td><input type="text" class="prdNm pull-left" readonly value= "' + val2 + ' " ></td>' +
         '            <td><input type="text" class="prdTyp pull-left" readonly value="' + val3 + ' " ></td>' +
         '            <td><input type="text" class="prdQnty pull-left" readonly value="' + val4 + ' " ></td>' +
         '            <td><input type="text" class="prdPrc pull-left" readonly value="' + val5 + ' " ></td>' +
+        '            <td><input type="text" class="prdUid pull-left" readonly value="' + uid + ' " ></td>' +
         '            <td><input type="text" class="prdDesc pull-left" readonly value="' + val6 + ' " ></td>' +
         '          </tr>';
 
