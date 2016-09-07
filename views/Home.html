@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../lib/css/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="../lib/css/font-awesome.css">
   <link rel="stylesheet" href="../lib/css/jquery-ui.css">
+  <link rel="stylesheet" href="../lib/css/tagsort.css">
   <!--CDN -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -21,6 +22,7 @@
   <script src="../lib/js/selectboxit.js"></script>
   <script src="../assests/js/basics.js"></script>
   <script src="../lib/js/jquery-2.2.1.js"></script>
+  <script src="../lib/js/tagsort.js"></script>
   <script src="../lib/js/jquery-ui.js"></script>
 
   <!-- CDN-->
@@ -80,85 +82,85 @@
   <div class="row">
     <div class="col-md-2">
       <ul>
-        <li>Task 1</li>
-        <li>Task 1</li>
-        <li>Task 1</li>
-        <li>Task 1</li>
-        <li>Task 1</li>
+        <li class="tabEle">Task 1</li>
+        <li class="tabEle">Task 1</li>
+        <li class="tabEle">Task 1</li>
+        <li class="tabEle">Task 1</li>
+        <li class="tabEle">Task 1</li>
       </ul>
     </div>
 
     <div class="col-md-8">
-  <h1>Enter Data</h1>
+      <h1>Enter Data</h1>
 
-  <div class="row">
-    <div class="col-md-6 col-sm-6 pull-left">
-      <ul class="p-l-0">
-        <li><label>Brand Name</label></li>
-        <li><input type="text" id="brandName" class="form-control" placeholder="Brand Name"></li>
-      </ul>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 pull-left">
+          <ul class="p-l-0">
+            <li><label>Brand Name</label></li>
+            <li><input type="text" id="brandName" class="form-control" placeholder="Brand Name"></li>
+          </ul>
 
-    </div>
-    <div class="col-md-6 col-sm-6 pull-right">
-      <ul class="p-l-0">
-        <li><label>Product Name</label></li>
-        <li><input type="text" id="productName" class="form-control" placeholder="Product Name"></li>
-      </ul>
-    </div>
-  </div>
-  <div class="row m-t-25">
-    <div class="col-md-4 col-sm-4">
-      <ul class="p-l-0">
-        <li><label>Product Type</label></li>
-        <li><select id="typeOfPrd">
-          <option value="selectOne">Select One</option>
-          <option value="Type1">Type1</option>
-          <option value="Type2">Type2</option>
-          <option value="Type3">Type3</option>
-          <option value="Type4">Type4</option>
-        </select></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-sm-4">
-      <ul class="p-l-0">
-        <li><label>Quantity</label></li>
-        <li><input type="number" id="quantity" class="form-control" placeholder="Quantity"></li>
-      </ul>
-    </div>
-    <div class="col-md-4 col-sm-4">
-      <ul class="p-l-0">
-        <li><label>Price</label></li>
-        <li><input type="number" id="price" class="form-control" placeholder="Price"></li>
-      </ul>
-    </div>
-  </div>
-  <div class="row m-t-25">
-    <div class="col-md-6 col-sm-6 ">
-      <ul class="p-l-0">
-        <li><label>UID</label></li>
-        <li><input type="number" id="uID" class="form-control" placeholder="Unique Id"></li>
-        <li><span class="error-msg" id="uidErrMsg">UID already Exit </span></li>
-      </ul>
-    </div>
-    <div class="col-md-6 col-sm-6 pull-right ">
-      <ul class="p-l-0">
-        <li><label>Description</label></li>
-        <li><textarea id="description" class="textarea-class">
+        </div>
+        <div class="col-md-6 col-sm-6 pull-right">
+          <ul class="p-l-0">
+            <li><label>Product Name</label></li>
+            <li><input type="text" id="productName" class="form-control" placeholder="Product Name"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row m-t-25">
+        <div class="col-md-4 col-sm-4">
+          <ul class="p-l-0">
+            <li><label>Product Type</label></li>
+            <li><select id="typeOfPrd">
+              <option value="selectOne">Select One</option>
+              <option value="Type1">Type1</option>
+              <option value="Type2">Type2</option>
+              <option value="Type3">Type3</option>
+              <option value="Type4">Type4</option>
+            </select></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <ul class="p-l-0">
+            <li><label>Quantity</label></li>
+            <li><input type="number" id="quantity" class="form-control" placeholder="Quantity"></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <ul class="p-l-0">
+            <li><label>Price</label></li>
+            <li><input type="number" id="price" class="form-control" placeholder="Price"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row m-t-25">
+        <div class="col-md-6 col-sm-6 ">
+          <ul class="p-l-0">
+            <li><label>UID</label></li>
+            <li><input type="number" id="uID" class="form-control" placeholder="Unique Id"></li>
+            <li><span class="error-msg" id="uidErrMsg">UID already Exit </span></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-6 pull-right ">
+          <ul class="p-l-0">
+            <li><label>Description</label></li>
+            <li><textarea id="description" class="textarea-class">
 
       </textarea></li>
-      </ul>
-    </div>
-  </div>
-  <hr>
-  <div class="row m-t-25">
-    <div class="col-md-4 col-sm-4"></div>
-    <div class="col-md-4 col-sm-4">
-      <button class="btn btn-primary center-block" id="entrData">Enter
-        Data
-      </button>
-    </div>
-    <div class="col-md-4 col-sm-4"></div>
-  </div>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row m-t-25">
+        <div class="col-md-4 col-sm-4"></div>
+        <div class="col-md-4 col-sm-4">
+          <button class="btn btn-primary center-block" id="entrData">Enter
+            Data
+          </button>
+        </div>
+        <div class="col-md-4 col-sm-4"></div>
+      </div>
 
     </div>
 
@@ -167,24 +169,12 @@
 
 </div>
 <!--Fluid Container Section3-->
-<div id="section3" class="container-fluid">
-  <h1>Section 3</h1>
+<div id="section3" class="container-fluid padding-35">
 
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-    the navigation bar while scrolling!</p>
-
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-    the navigation bar while scrolling!</p>
 </div>
 <!--Fluid Container Section4-->
 <div id="section4" class="container-fluid">
-  <h1>Section 4 Submenu 1</h1>
-
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-    the navigation bar while scrolling!</p>
-
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
-    the navigation bar while scrolling!</p>
+  
 </div>
 
 <!--modal displaying Products Entered-->
@@ -261,16 +251,17 @@
 
   });
 
-$(document).on('keyup', '#uID', function () {
-  var valOfUid = $('#uID').val();
-  if ($.inArray(valOfUid, uIDArray) > -1) {  }
-  else{
-    $('#brandName,#productName,#typeOfPrd,#quantity,#price,#uID,#description').removeClass('border-rcc');
-    $('#uidErrMsg').hide();
+  $(document).on('keyup', '#uID', function () {
+    var valOfUid = $('#uID').val();
+    if ($.inArray(valOfUid, uIDArray) > -1) {
+    }
+    else {
+      $('#brandName,#productName,#typeOfPrd,#quantity,#price,#uID,#description').removeClass('border-rcc');
+      $('#uidErrMsg').hide();
 
-  }
+    }
 
-});
+  });
 
   var productObj = {};
   $(document).on('click', "#entrData", function () {
@@ -304,7 +295,7 @@ $(document).on('keyup', '#uID', function () {
     console.log(JSON.stringify(productObj));
 
   });
-  function returnTrTemplate(len, val1, val2, val3, val4,  val5,uid, val6) {
+  function returnTrTemplate(len, val1, val2, val3, val4, val5, uid, val6) {
 
     var template = '<tr>' +
         '            <td><input type="text" class="prdCnt pull-left" readonly value= "' + len + ' " ></td>' +
@@ -320,6 +311,5 @@ $(document).on('keyup', '#uID', function () {
     return template;
   }
 </script>
-
 
 </html>
