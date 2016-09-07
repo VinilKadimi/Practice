@@ -5,15 +5,26 @@
   <title>My First BootStrap</title>
   <meta charset="utf-8">
   <meta name="viewPort" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="../lib/css/style.css">
-  <script src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <!--Local StyleSheet-->
+  <link rel="stylesheet" href="../assests/css/style.css">
+  <link rel="stylesheet" href="../lib/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../lib/css/font-awesome.css">
+  <!--CDN -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <!-- Local Scripts-->
+  <script src="../assests/js/basics.js"></script>
+  <script src="../lib/js/jquery-2.2.1.js"></script>
+  <script src="../lib/js/jquery-ui.js"></script>
+  <!-- CDN-->
+  <script src="https://code.jquery.com/jquery-2.2.1.js" integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc="
+          crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
 
 </head>
 
@@ -25,18 +36,22 @@
       <ul class="list-inline m-b-0">
         <li><i class="fa fa-home home" aria-hidden="true"></i></li>
         <li class="navEle"><a href="#section1" class="navEle">About Us</a></li>
-        <li class="navEle"><a href="#section2" class="navEle">Clients</a> </li>
-        <li class="navEle"><a href="#section3" class="navEle">Services</a> </li>
-        <li class="navEle"><a href="#section4" class="navEle">Contact Us</a> </li>
+        <li class="navEle"><a href="#section2" class="navEle">Clients</a></li>
+        <li class="navEle"><a href="#section3" class="navEle">Services</a></li>
+        <li class="navEle"><a href="#section4" class="navEle">Contact Us</a></li>
 
         <li class="pull-right">
-        <form id="signin" class="navbar-form navbar-right" role="form">
-          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user icon"></i></span>
-            <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address"> </div>
-          <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock icon"></i></span>
-            <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password"> </div>
-          <button type="submit" class="btn btn-primary">Login</button>
-        </form>
+          <form id="signin" class="navbar-form navbar-right" role="form">
+            <div class="input-group"><span class="input-group-addon"><i
+                class="glyphicon glyphicon-user icon"></i></span>
+              <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
+            </div>
+            <div class="input-group"><span class="input-group-addon"><i
+                class="glyphicon glyphicon-lock icon"></i></span>
+              <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
         </li>
       </ul>
     </div>
@@ -46,31 +61,103 @@
 <!--Fluid Container Section1-->
 <div id="section1" class="container-fluid">
   <h1>Section 1</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
+    the navigation bar while scrolling!</p>
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
+    the navigation bar while scrolling!</p>
 </div>
 <!--Fluid Container Section2-->
-<div id="section2" class="container-fluid">
-  <h1>Section 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+<div id="section2" class="container padding-35">
+  <h1>Enter Data</h1>
+
+  <div class="row">
+    <div class="col-md-6 col-sm-6 pull-left">
+      <ul class="p-l-0">
+        <li><label>Brand Name</label></li>
+        <li><input type="text" id="brandName" class="form-control" placeholder="Brand Name"></li>
+      </ul>
+
+    </div>
+    <div class="col-md-6 col-sm-6 pull-right">
+      <ul class="p-l-0">
+        <li><label>Product Name</label></li>
+        <li><input type="text" id="productName" class="form-control" placeholder="Product Name"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-sm-4">
+      <ul class="p-l-0">
+        <li><label>Product Type</label></li>
+        <li><select>
+          <option value="Type1">Type1</option>
+          <option value="Type2">Type2</option>
+          <option value="Type3">Type3</option>
+          <option value="Type4">Type4</option>
+        </select></li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <ul class="p-l-0">
+        <li><label>Quantity</label></li>
+        <li><input type="number" id="quantity" class="form-control" placeholder="Quantity"></li>
+      </ul>
+    </div>
+    <div class="col-md-4 col-sm-4">
+      <ul class="p-l-0">
+        <li><label>Price</label></li>
+        <li><input type="number" id="price" class="form-control" placeholder="Price"></li>
+      </ul>
+    </div>
+  </div>
 </div>
 <!--Fluid Container Section3-->
 <div id="section3" class="container-fluid">
   <h1>Section 3</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
+    the navigation bar while scrolling!</p>
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
+    the navigation bar while scrolling!</p>
 </div>
 <!--Fluid Container Section4-->
 <div id="section4" class="container-fluid">
   <h1>Section 4 Submenu 1</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
+    the navigation bar while scrolling!</p>
+
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at
+    the navigation bar while scrolling!</p>
 </div>
 
 
-
-
 </body>
+
+<script>
+  $(document).ready(function () {
+    var heightOfDom = $(window).height();
+    $('#section1,#section2,#section3,#section4,#section4').css('height', heightOfDom);
+
+    //AutoComplete
+    var availableBrands = ["ActionScript", "AppleScript", "Asp", "BASIC", "C", "C++", "Clojure", "COBOL", "ColdFusion",
+      "Erlang", "Fortran", "Groovy", "Haskell", "Java", "JavaScript", "Lisp", "Perl", "PHP", "Python", "Ruby", "Scala",
+      "Scheme"];
+    $("#brandName").autocomplete({
+      source: availableBrands
+    });
+    var availableProducts = ["ActionScript", "AppleScript", "Asp", "BASIC", "C", "C++", "Clojure", "COBOL", "ColdFusion",
+      "Erlang", "Fortran", "Groovy", "Haskell", "Java", "JavaScript", "Lisp", "Perl", "PHP", "Python", "Ruby", "Scala",
+      "Scheme"];
+    $("#productName").autocomplete({
+      source: availableProducts
+    });
+
+  });
+</script>
+
 
 </html>

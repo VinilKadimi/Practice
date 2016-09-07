@@ -1,18 +1,58 @@
 
+
+/* Elements*/
 .topnav a {
   padding: 10px 15px 9px 15px !important;
   display: inline-block;
 }
+
 a {
   text-decoration: none!important ;
 }
+
+ul
+{
+  list-style-type: none;
+}
+
+h1{
+  font-family: 'Josefin Slab', serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.wrapper input[type="text"] {
+  position: relative;
+}
+
+/*ID's & Classes*/
 #section1,#section2,#section3,#section4,#section4{
-  min-height: 700px;
+  min-height:768px;
 }
 #section1{background-color: #85A6B1;}
 #section2{background-color: #DAEBEE;}
 #section3{background-color: #8BD7D1;}
 #section4{background-color: #CAEDDE;}
+
+/*General Usage*/
+.m-b-0{
+  margin-bottom: 0!important;
+}
+.padding-35{
+  padding: 35px !important;
+}
+.p-l-0{
+  padding-left: 0;
+}
 .icon{
   color: #364F6B !important;
   }
@@ -55,6 +95,10 @@ a {
 .list-inline>li{
   display: inline-flex !important;
 }
-.m-b-0{
- margin-bottom: 0!important;
+
+.input-class{
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px #ccc;
 }
