@@ -1,47 +1,74 @@
-
 /*elements*/
-body{
-  font-family: 'Play','Oxygen', sans-serif;
+body {
+  font-family: 'Play', 'Oxygen', sans-serif;
 }
-a{
+
+a {
   text-decoration: none;
   text-transform: uppercase;
 }
-ul{ list-style-type: none;}
-h3{ color:#337ab7 !important;}
+
+ul {
+  list-style-type: none;
+}
+
+h2,h3,h4 {
+  color: #337ab7 !important;
+}
+
 /*classes*/
-.s1,.s4{
- height: 950px;
+.s1, .s4 {
+  height: 950px;
   background-color: #F7FBFC;
 }
-.s2{
+
+.s2 {
   height: 950px;
   background-color: #B9D7EA;
 }
-.s3{
+
+.s3 {
   height: 950px;
   background-color: #769FCD;
 }
 
- .padding-35 {
-   padding: 35px !important;
- }
+.padding-35 {
+  padding: 35px !important;
+}
 
- .nav-padding{
-   padding: 10px 30px 10px 30px;
-   background-color: #fff;
-   color:#9d9d9d;
- }
- .nav-padding:hover{
-   padding: 10px 30px 10px 30px;
-   background-color: #9d9d9d;
-   color:#fff;
- }
-.profilePic{
+.nav-padding {
+  padding: 10px 30px 10px 30px;
+  background-color: #fff;
+  color: #9d9d9d;
+}
+
+.nav-padding:hover {
+  padding: 10px 30px 10px 30px;
+  background-color: #9d9d9d;
+  color: #fff;
+}
+.profileInfo{
+  padding: 50px 10px 40px 10px;
+
+}
+.profilePic {
   min-height: 150px;
   min-width: 150px;
-  margin: 50px 10px 40px 10px;
   background-image: url("../images/recent-images-11.jpg");
   background-repeat: no-repeat;
 }
+.profileDesc{
+  margin:10px 0 30px 0;
+}
 
+
+/*Media Query*/
+@media (max-width: 768px ) {
+  .s1, .s4 {
+    height: 0;
+  }
+
+  .s2 {
+ height:450px;
+  }
+}
