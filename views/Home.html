@@ -92,7 +92,9 @@
   <div class="row">
     <div class="col-md-2">
       <ul class="list-inline m-b-0">
-        <li class="tabEle">Task 1</li>
+        <li class="tabEle">
+          <button id="tsk1">Task1</button>
+        </li>
         <li class="tabEle">Task 2</li>
         <li class="tabEle">Task 3</li>
         <li class="tabEle">Task 4</li>
@@ -101,77 +103,79 @@
     </div>
 
     <div class="col-md-8">
-      <h1>Enter Data</h1>
+      <div id="tskDiv">
 
-      <div class="row">
-        <div class="col-md-6 col-sm-6 pull-left">
-          <ul class="p-l-0">
-            <li><label>Brand Name</label></li>
-            <li><input type="text" id="brandName" class="form-control" placeholder="Brand Name"></li>
-          </ul>
 
-        </div>
-        <div class="col-md-6 col-sm-6 pull-right">
-          <ul class="p-l-0">
-            <li><label>Product Name</label></li>
-            <li><input type="text" id="productName" class="form-control" placeholder="Product Name"></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row m-t-25">
-        <div class="col-md-4 col-sm-4">
-          <ul class="p-l-0">
-            <li><label>Product Type</label></li>
-            <li><select id="typeOfPrd">
-              <option value="selectOne">Select One</option>
-              <option value="Type1">Type1</option>
-              <option value="Type2">Type2</option>
-              <option value="Type3">Type3</option>
-              <option value="Type4">Type4</option>
-            </select></li>
-          </ul>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <ul class="p-l-0">
-            <li><label>Quantity</label></li>
-            <li><input type="number" id="quantity" class="form-control" placeholder="Quantity"></li>
-          </ul>
-        </div>
-        <div class="col-md-4 col-sm-4">
-          <ul class="p-l-0">
-            <li><label>Price</label></li>
-            <li><input type="number" id="price" class="form-control" placeholder="Price"></li>
-          </ul>
-        </div>
-      </div>
-      <div class="row m-t-25">
-        <div class="col-md-6 col-sm-6 ">
-          <ul class="p-l-0">
-            <li><label>UID</label></li>
-            <li><input type="number" id="uID" class="form-control" placeholder="Unique Id"></li>
-            <li><span class="error-msg" id="uidErrMsg">UID already Exit </span></li>
-          </ul>
-        </div>
-        <div class="col-md-6 col-sm-6 pull-right ">
-          <ul class="p-l-0">
-            <li><label>Description</label></li>
-            <li><textarea id="description" class="textarea-class">
+        <!--<h1>Enter Data</h1>
 
-      </textarea></li>
-          </ul>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 pull-left">
+            <ul class="p-l-0">
+              <li><label>Brand Name</label></li>
+              <li><input type="text" id="brandName" class="form-control" placeholder="Brand Name"></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-6 pull-right">
+            <ul class="p-l-0">
+              <li><label>Product Name</label></li>
+              <li><input type="text" id="productName" class="form-control" placeholder="Product Name"></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <hr>
-      <div class="row m-t-25">
-        <div class="col-md-4 col-sm-4"></div>
-        <div class="col-md-4 col-sm-4">
-          <button class="btn btn-primary center-block" id="entrData">Enter
-            Data
-          </button>
+        <div class="row m-t-25">
+          <div class="col-md-4 col-sm-4">
+            <ul class="p-l-0">
+              <li><label>Product Type</label></li>
+              <li><select id="typeOfPrd">
+                <option value="selectOne">Select One</option>
+                <option value="Type1">Type1</option>
+                <option value="Type2">Type2</option>
+                <option value="Type3">Type3</option>
+                <option value="Type4">Type4</option>
+              </select></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <ul class="p-l-0">
+              <li><label>Quantity</label></li>
+              <li><input type="number" id="quantity" class="form-control" placeholder="Quantity"></li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <ul class="p-l-0">
+              <li><label>Price</label></li>
+              <li><input type="number" id="price" class="form-control" placeholder="Price"></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-4 col-sm-4"></div>
-      </div>
+        <div class="row m-t-25">
+          <div class="col-md-6 col-sm-6 ">
+            <ul class="p-l-0">
+              <li><label>UID</label></li>
+              <li><input type="number" id="uID" class="form-control" placeholder="Unique Id"></li>
+              <li><span class="error-msg" id="uidErrMsg">UID already Exit </span></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-6 pull-right ">
+            <ul class="p-l-0">
+              <li><label>Description</label></li>
+              <li><textarea id="description" class="textarea-class"></textarea></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row m-t-25">
+          <div class="col-md-4 col-sm-4"></div>
+          <div class="col-md-4 col-sm-4">
+            <button class="btn btn-primary center-block" id="entrData">Enter
+              Data
+            </button>
+          </div>
+          <div class="col-md-4 col-sm-4"></div>
+        </div>
+-->
 
+      </div>
     </div>
 
     <div class="col-md-2"></div>
@@ -239,10 +243,11 @@
 
 <script>
   var uIDArray = [];
+  var cnt=0;
   $(document).ready(function () {
     $('#uidErrMsg').hide();
     var heightOfDom = $(document).innerHeight();
-     $('#section1,#section2,#section3,#section4,#section4').css('height', heightOfDom);
+    $('#section1,#section2,#section3,#section4,#section4').css('height', heightOfDom);
     $("nav").focus();
 
     //$('select#typeOfPrd').selectBoxIt();
@@ -273,6 +278,15 @@
     }
 
   });
+
+  $(document).on('click','#tsk1',function(){
+    console.log('In function');
+    cnt++;
+    if(cnt==1){
+      $('#tskDiv').append(returnEntrDtaTemplate());
+      $('#uidErrMsg').hide();
+    }
+  })
 
   var productObj = {};
   $(document).on('click', "#entrData", function () {
@@ -318,6 +332,76 @@
         '            <td><input type="text" class="prdUid pull-left" readonly value="' + uid + ' " ></td>' +
         '            <td><input type="text" class="prdDesc pull-left" readonly value="' + val6 + ' " ></td>' +
         '          </tr>';
+
+    return template;
+  }
+
+  function returnEntrDtaTemplate() {
+    var template = '<h1>Enter Data</h1>' +
+        '      <div class="row">' +
+        '        <div class="col-md-6 col-sm-6 pull-left">' +
+        '          <ul class="p-l-0">' +
+        '            <li><label>Brand Name</label></li>' +
+        '            <li><input type="text" id="brandName" class="form-control" placeholder="Brand Name"></li>' +
+        '          </ul>' +
+        '        </div>' +
+        '        <div class="col-md-6 col-sm-6 pull-right">' +
+        '          <ul class="p-l-0">' +
+        '            <li><label>Product Name</label></li>' +
+        '            <li><input type="text" id="productName" class="form-control" placeholder="Product Name"></li>' +
+        '          </ul>' +
+        '        </div>' +
+        '      </div>' +
+        '      <div class="row m-t-25">' +
+        '        <div class="col-md-4 col-sm-4">' +
+        '          <ul class="p-l-0">' +
+        '            <li><label>Product Type</label></li>' +
+        '            <li><select id="typeOfPrd">' +
+        '              <option value="selectOne">Select One</option>' +
+        '              <option value="Type1">Type1</option>' +
+        '              <option value="Type2">Type2</option>' +
+        '              <option value="Type3">Type3</option>' +
+        '              <option value="Type4">Type4</option>' +
+        '            </select></li>' +
+        '          </ul>' +
+        '        </div>' +
+        '        <div class="col-md-4 col-sm-4">' +
+        '          <ul class="p-l-0">' +
+        '            <li><label>Quantity</label></li>' +
+        '            <li><input type="number" id="quantity" class="form-control" placeholder="Quantity"></li>' +
+        '          </ul>' +
+        '        </div>' +
+        '        <div class="col-md-4 col-sm-4">' +
+        '          <ul class="p-l-0">' +
+        '            <li><label>Price</label></li>' +
+        '            <li><input type="number" id="price" class="form-control" placeholder="Price"></li>' +
+        '          </ul>' +
+        '        </div>' +
+        '      </div>' +
+        '      <div class="row m-t-25">' +
+        '        <div class="col-md-6 col-sm-6 ">' +
+        '          <ul class="p-l-0">' +
+        '            <li><label>UID</label></li>' +
+        '            <li><input type="number" id="uID" class="form-control" placeholder="Unique Id"></li>' +
+        '            <li><span class="error-msg" id="uidErrMsg">UID already Exit </span></li>' +
+        '          </ul>' +
+        '        </div>' +
+        '        <div class="col-md-6 col-sm-6 pull-right ">' +
+        '          <ul class="p-l-0">' +
+        '            <li><label>Description</label></li>' +
+        '            <li><textarea id="description" class="textarea-class">' +
+        '</textarea></li>'+
+    '</ul>'+
+    '</div>'+
+    '</div>'+
+    '<hr>'+
+    '<div class="row m-t-25">'+
+    '<div class="col-md-4 col-sm-4"></div>'+
+    '<div class="col-md-4 col-sm-4">'+
+    '<button class="btn btn-primary center-block" id="entrData">Enter Data</button>'+
+    '</div>'+
+    '<div class="col-md-4 col-sm-4"></div>'+
+    '</div>';
 
     return template;
   }

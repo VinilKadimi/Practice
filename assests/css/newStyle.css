@@ -5,7 +5,7 @@ body {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
+
 }
 
 ul {
@@ -17,6 +17,34 @@ h2,h3,h4 {
 }
 
 /*classes*/
+.m-t-15{
+  margin-top: 15px;
+}
+.padding-left-15{
+  padding-left: 15px;
+}
+.fa  {
+  font-size: 23px !important;
+  color: #337ab7;
+}
+.fa:hover{
+  font-size: 23px !important;
+  color: #21415c;
+}
+.btnStyle {
+  color: #fff !important;
+  background-color: #21415c !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  }
+.btnStyle:hover,:focus {
+  color: #21415c !important;
+  background-color:#fff  !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
 .s1, .s4 {
   height: 950px;
   background-color: #F7FBFC;
