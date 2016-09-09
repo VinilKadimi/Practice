@@ -284,9 +284,11 @@
     cnt++;
     if(cnt==1){
       $('#tskDiv').append(returnEntrDtaTemplate());
+      var a= Math.random();a*=100000000000000000;
+      $('#uID').val(a);
       $('#uidErrMsg').hide();
     }
-  })
+  });
 
   var productObj = {};
   $(document).on('click', "#entrData", function () {
@@ -295,9 +297,10 @@
     var ptype = $('#typeOfPrd').val();
     var pqnty = $('#quantity').val();
     var pprice = $('#price').val();
-    var uid = $('#uID').val();
     var pdesc = $('#description').val();
     var len = $('#productsTbl tr').length;
+    var uid=$('#uID').val();
+
     productObj.bName = bname;
     productObj.pName = pname;
     productObj.pType = ptype;

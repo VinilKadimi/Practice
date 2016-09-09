@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <title>My First BootStrap</title>
+  <meta charset="utf-8">
+  <meta name="viewPort" content="width=device-width,initial-scale=1">
+  <!--ID meta Edge tag-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <!--Local StyleSheet-->
+  <link rel="stylesheet" href="../assests/css/dribEx.css">
+  <link rel="stylesheet" type="text/css" href="../lib/css/javascript.fullPage.css"/>
+  <link rel="stylesheet" href="../lib/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../lib/css/font-awesome.css">
+  <link rel="stylesheet" href="../lib/css/jquery-ui.css">
+  <link rel="stylesheet" href="../lib/css/tagsort.css">
+  <link rel="stylesheet" href="../lib/fonts/Play-Regular.ttf">
+  <link rel="stylesheet" href="../lib/fonts/Play-Bold.ttf">
+  <link rel="stylesheet" href="../lib/fonts/JosefinSlab-Bold.ttf">
+  <link rel="stylesheet" href="../lib/fonts/Oxygen-Bold.ttf">
+  <link rel="stylesheet" href="../lib/fonts/Oxygen-Regular.ttf">
+  <link rel="stylesheet" href="../lib/fonts/Oxygen-Light.ttf">
+
+  <!--CDN -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
+  <!-- Local Scripts-->
+
+  <script src="../assests/js/basics.js"></script>
+  <script src="../lib/js/jquery-2.2.1.js"></script>
+  <script src="../lib/js/tagsort.js"></script>
+  <script src="../lib/js/jquery-ui.js"></script>
+
+  <!-- CDN-->
+  <script src="https://code.jquery.com/jquery-2.2.1.js" integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc="
+          crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+</head>
+<body>
+
+<!-- Landing Page-->
+
+<div class="LandingPage" id="firstPage">
+  <div class="container">
+
+    <div class=row>
+      <div class="col-md-12">
+        <ul class="list-inline p-t-15">
+          <li><h1 class="whiteClr">Logo</h1></li>
+          <li class="m-l-250"><a><i class="fa fa-home" aria-hidden="true"></i></a></li>
+          <li><a class="anchors">About</a></li>
+          <li><a class="anchors">Team</a></li>
+          <li><a class="anchors">Portfolio</a></li>
+          <li><a class="anchors">Careers</a></li>
+          <li><a class="anchors">Blog</a></li>
+          <li>
+            <buton class="btnHeader">buy now</buton>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-3 "></div>
+      <div class="col-md-6 col-sm-6 col-xs-12 textDiv">
+        <p class="whiteClr p1">This is Stellar.</p>
+
+        <p class="whiteClr p2">Responsive. Retina Ready. Sketch Support</p>
+      </div>
+      <div class="col-md-3 col-sm-3 "></div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-3 col-xs-3"></div>
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <button class="btnB1">learn more</button>
+        <button class="btnB1 m-1-20" id="playBtn">watch video</button>
+      </div>
+      <div class="col-md-3 col-sm-3 col-xs-3"></div>
+
+    </div>
+
+    <div class="row p-t-250">
+      <div class="col-md-4 col-sm-4 col-xs-4"></div>
+      <div class="col-md-4 col-sm-4 col-xs-4">
+      <span class="p-l-150 ">
+        <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+        <p class="whiteClr p-l-100 p3">scroll down to see more</p>
+      </span>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-4"></div>
+    </div>
+
+  </div>
+
+
+
+
+
+<script>
+  $('#playBtn').mouseover(function(){
+    $('#playIcn').addClass('purpleClr');
+  });
+  /*var height1 =$(window).innerHeight();
+   $('.LandingPage').css('height',height1);*/
+
+</script>
+</body>
+</html>

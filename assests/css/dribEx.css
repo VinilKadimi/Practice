@@ -1,0 +1,205 @@
+
+
+
+
+/*Elements*/
+a {
+  text-decoration: none !important;
+}
+
+/*Colors*/
+
+.whiteClr {
+  color: #fff !important;}
+.purpleClr{
+  color:#3f217e !important;
+}
+
+/*Fonts*/
+
+.p2 {
+  font-size: 22px;
+}
+
+.p3 {
+  font-size: 12px;
+}
+
+.p35 {
+  font-size: 35px;
+}
+
+/* Utility classes*/
+.m-t-50 {
+  margin-top: 50px;
+}
+
+.m-l-250 {
+  margin-left: 250px;
+}
+
+.m-1-20 {
+  margin-left: 20px !important;
+}
+
+.m-r-500 {
+  margin-left: 500px;
+}
+
+.p-l-50 {
+  padding-left: 50px;
+}
+
+.p-l-100 {
+  padding-left: 100px;
+}
+
+.p-l-150 {
+  padding-left: 150px;
+}
+
+.p-l-250 {
+  padding-left: 250px;
+}
+
+.p-t-15 {
+  padding-top: 15px
+}
+
+.p-t-250 {
+  padding-top: 250px;
+}
+
+.p-r-50 {
+  padding-right: 50px;
+}
+
+/*Classes and IDs*/
+#secondPage {
+  background-color: #fff
+}
+
+.fontAw {
+  color: #fff !important;
+}
+
+.fontAw:hover {
+  color: #5a4193 !important;
+}
+
+.anchors {
+  color: #b2abca;
+  font-size: 19px !important;
+  padding: 10px 25px;
+}
+
+.anchors:hover {
+  color: #fff !important;
+  font-size: 19px !important;
+  padding: 10px 25px;
+}
+
+
+
+.fa {
+  color: #fff !important;
+  font-size: 20px !important;
+}
+
+.btnHeader {
+  padding: 15px 25px 15px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #5a4193;
+  border-radius: 30px
+}
+
+.btnHeader:hover, :focus {
+  padding: 15px 25px 15px 25px;
+  color: #3f217e;
+  text-transform: uppercase;
+  background: #fff;
+  border: 1px solid #5a4193;
+  border-radius: 30px;
+  transition-duration: .3s;
+}
+
+.btnB1 {
+  padding: 20px 60px 20px 60px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid #5a4193;
+  border-radius: 30px
+}
+
+.btnB1:hover, :focus {
+  padding: 20px 60px 20px 60px;
+  color: #3f217e;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.8);
+  border: 1px solid #5a4193;
+  border-radius: 30px;
+  transition-duration : .3s;
+}
+
+.LandingPage {
+  background-color: #3f217e;
+  height: 995px;
+}
+
+.textDiv {
+  padding: 300px 45px 10px 45px;
+}
+
+.p1 {
+  font-size: 75px;
+  letter-spacing: 5px;
+}
+
+.scroll-dwn {
+  margin: 240px 150px;
+}
+/*
+media query*/
+@media all and (max-width: 991px) {
+  .m-l-250 {
+    margin-left: 0;
+  }
+
+  .anchors {
+    padding: 10px;
+  }
+
+  .p1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+
+  .p2 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .textDiv {
+    padding: 100px 45px 10px 45px !important;
+  }
+
+  .btnHeader {
+    padding: 8px 15px 8px 15px !important;
+  }
+
+  .btnB1,.btnB1:hover {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: 50px;
+    margin-bottom: 10px
+  }
+
+
+}
